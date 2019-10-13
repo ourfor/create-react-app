@@ -2,66 +2,6 @@ name: nost
 version: 20190923
 email: ourfor@qq.com
 
-api:
-  base: https://api.ourfor.top/blog
-  path:
-    essay: 
-      main: essays
-      all: essays/all
-      select: essays/all
-      create: ''
-      delete: ''
-      update: ''
-    write: 
-      main: writes
-      all: writes/all
-      select: :title
-      selectAll: ''
-      editBuff: writes/content
-      create: ''
-      update: content
-    editor: 
-      main: /dashboard/editor
-    comment:
-      main: comments
-      create: ''
-      select: comments/:id
-    login: 
-      auth: auth
-    auth: auth
-    upload: upload
-    
-
-router: 
-  main: 
-    base: "https://file.ourfor.top/source/blog/media/video/"
-    watchlist: "https://api.ourfor.top/blog/video/watchlist"
-    recom: "https://file.ourfor.top/source/blog/media/video/recom"
-    videoBase: "https://file.ourfor.top/youtube/"
-    playlist: "https://file.ourfor.top/youtube/.video/playlist.json"
-    cover: "https://file.ourfor.top/youtube/.video/kiki.jpg"
-
-#
-## header link添加规则
-## theme可选: twoTone "" filled
-
-header: 
-  link:
-    github: 
-      icon: github
-      url: https://github.com/ourfor
-      desc: Ourfor
-      theme: 
-      color: "#d50000"
-    smile: 
-      icon: smile
-      url: "#311b92"
-      desc: Changsha
-      theme: twoTone
-      color: "#33691e"
-    file: 
-      icon: folder-open
-      desc: File
-      url: https://file.ourfor.top
-      theme: twoTone
-      color: "#311b92"
+student: 
+  - '李白'
+  - '杜甫'
