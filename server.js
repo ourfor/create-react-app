@@ -1,8 +1,6 @@
 const express = require("express");
 const webpack = require("webpack");
 const webpackDevMiddleware = require("webpack-dev-middleware");
-import login from './middleware/login';
-import dashboard from './middleware/dashboard';
 import history from 'connect-history-api-fallback';
 
 const app = express();
@@ -36,11 +34,9 @@ app.use(require("webpack-hot-middleware")(compiler));
 //     console.log(req.body.password);
 //     res.end("哈哈");
 // })
-login(app);
-dashboard(app);
 
 // 将文件 serve 到端口 3000
 app.listen(3000,function(){
-    console.log("Example app listen on port 3000\n");
-    console.log("😳😏😜😙😝☺️🙂😉😁😂😄😌☹️😕😔🤔🙄😑😒");
+    console.log("😳😏😜😙😝🙂😉😁😂😄😌☹️😕😔🤔🙄😑😒");
+    console.log('http://localhost:3000');
 });
